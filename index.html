@@ -1,11 +1,218 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <title>Mi sitio web</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Lulu & Pacho — Servicios de Infraestructura IT y Ciberseguridad</title>
+<meta name="description" content="Extendemos el equipo técnico de nuestros clientes en infraestructura IT, ciberseguridad e implementaciones." />
+<link rel="icon" href="assets/img/logo.png" type="image/png" />
+<link rel="stylesheet" href="assets/css/variables.css" />
+<link rel="stylesheet" href="assets/css/styles.css" />
+<link rel="stylesheet" href="assets/css/responsive.css" />
+<script>
+  (function () {
+    try {
+      var stored = localStorage.getItem("lp-theme");
+      var theme = stored || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      document.documentElement.setAttribute("data-theme", theme);
+    } catch (err) {}
+  })();
+</script>
 </head>
-<body>
-  <h1>Bienvenido al sitio de Lulu y Pacho</h1>
-  <p>Empresa especializada en eweeeeeeeeeeeeeeeeeeee</p>
+<body data-page="home">
+<a class="skip-link" href="#main-content">Saltar al contenido principal</a>
+<div id="site-header-mount"></div>
+
+<main id="main-content">
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <span class="hero-eyebrow" data-i18n="home.hero.eyebrow">Servicios profesionales de IT</span>
+        <h1 data-i18n="home.hero.title">Extendemos tu equipo IT cuando más lo necesitás.</h1>
+        <p class="lead" data-i18n="home.hero.subtitle">
+          Infraestructura, Ciberseguridad, Implementaciones y Servicios Operativos para empresas.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="contact.html" data-i18n="home.hero.ctaPrimary">Contactanos</a>
+          <a class="btn btn-secondary" href="services.html" data-i18n="home.hero.ctaSecondary">Nuestros Servicios</a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <img
+          src="assets/img/icons/hero-illustration.svg"
+          alt="Ilustración de infraestructura de red y ciberseguridad con servidores, nube y un escudo de protección"
+          width="560"
+          height="480"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- Services preview -->
+  <section class="section-alt">
+    <div class="container">
+      <div class="section-heading center">
+        <span class="eyebrow" data-i18n="home.services.eyebrow">Qué hacemos</span>
+        <h2 data-i18n="home.services.title">Capacidad técnica lista para sumarse a tu proyecto</h2>
+        <p data-i18n="home.services.description">
+          Trabajamos junto a equipos internos de IT para ejecutar, reforzar y acompañar proyectos tecnológicos de
+          principio a fin.
+        </p>
+      </div>
+
+      <div class="card-grid">
+        <article class="card reveal">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="7" rx="1.5"/><rect x="3" y="14" width="18" height="7" rx="1.5"/><circle cx="7" cy="6.5" r="1"/><circle cx="7" cy="17.5" r="1"/><line x1="11" y1="6.5" x2="17" y2="6.5"/><line x1="11" y1="17.5" x2="17" y2="17.5"/></svg>
+          </div>
+          <h3 data-i18n="home.services.card1.title">Infraestructura IT</h3>
+          <p data-i18n="home.services.card1.description">Diseño, despliegue y mantenimiento de infraestructura on-premise y en la nube.</p>
+          <a class="card-link" href="services.html#infrastructure" data-i18n="home.services.card1.link">Más información</a>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg>
+          </div>
+          <h3 data-i18n="home.services.card2.title">Ciberseguridad</h3>
+          <p data-i18n="home.services.card2.description">Pentesting, auditorías y hardening para reducir la superficie de ataque de tu organización.</p>
+          <a class="card-link" href="services.html#cybersecurity" data-i18n="home.services.card2.link">Más información</a>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="1.6"/><circle cx="5" cy="17" r="1.6"/><circle cx="19" cy="17" r="1.6"/><line x1="12" y1="6.6" x2="6" y2="15.4"/><line x1="12" y1="6.6" x2="18" y2="15.4"/><line x1="6.5" y1="17" x2="17.5" y2="17"/></svg>
+          </div>
+          <h3 data-i18n="home.services.card3.title">Network Assessment</h3>
+          <p data-i18n="home.services.card3.description">Relevamiento y diagnóstico de redes para detectar riesgos y oportunidades de mejora.</p>
+          <a class="card-link" href="services.html#network-assessment" data-i18n="home.services.card3.link">Más información</a>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4v10l-8 4-8-4V7z"/><path d="M12 3v18"/><path d="M4 7l8 4 8-4"/></svg>
+          </div>
+          <h3 data-i18n="home.services.card4.title">Operaciones IT</h3>
+          <p data-i18n="home.services.card4.description">Refuerzo temporal de equipos técnicos y despliegues masivos de dispositivos.</p>
+          <a class="card-link" href="services.html#it-operations" data-i18n="home.services.card4.link">Más información</a>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a6 6 0 0 0-3.6 10.8c.4.3.6.8.6 1.3V15h6v-.9c0-.5.2-1 .6-1.3A6 6 0 0 0 12 2z"/><line x1="10" y1="18" x2="14" y2="18"/><line x1="10.5" y1="21" x2="13.5" y2="21"/></svg>
+          </div>
+          <h3 data-i18n="home.services.card5.title">Consultoría</h3>
+          <p data-i18n="home.services.card5.description">Acompañamiento estratégico en decisiones de arquitectura, seguridad y proveedores.</p>
+          <a class="card-link" href="services.html#consulting" data-i18n="home.services.card5.link">Más información</a>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4" width="14" height="17" rx="2"/><rect x="9" y="2" width="6" height="4" rx="1"/><path d="M9 13l2 2 4-4"/></svg>
+          </div>
+          <h3 data-i18n="home.services.card6.title">Proyectos Gestionados</h3>
+          <p data-i18n="home.services.card6.description">Ejecución end-to-end de migraciones e implementaciones con responsables dedicados.</p>
+          <a class="card-link" href="services.html#managed-projects" data-i18n="home.services.card6.link">Más información</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Lulu & Pacho -->
+  <section id="why">
+    <div class="container">
+      <div class="section-heading center">
+        <span class="eyebrow" data-i18n="home.why.eyebrow">Nuestro diferencial</span>
+        <h2 data-i18n="home.why.title">Por qué Lulu & Pacho</h2>
+        <p data-i18n="home.why.description">
+          No vendemos software: aportamos manos, criterio técnico y experiencia real en el terreno.
+        </p>
+      </div>
+
+      <div class="feature-grid">
+        <div class="feature-item reveal">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3 6 6 1-4.5 4 1 6-5.5-3-5.5 3 1-6L4 9l6-1z"/></svg>
+          </div>
+          <div>
+            <h3 data-i18n="home.why.item1.title">Experiencia técnica comprobada</h3>
+            <p data-i18n="home.why.item1.description">Profesionales con recorrido real en infraestructura, redes y seguridad, no generalistas.</p>
+          </div>
+        </div>
+
+        <div class="feature-item reveal">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V9M12 19V5M20 19v-7"/></svg>
+          </div>
+          <div>
+            <h3 data-i18n="home.why.item2.title">Escalamos equipos rápidamente</h3>
+            <p data-i18n="home.why.item2.description">Sumamos especialistas a tu equipo interno en tiempos acotados, sin procesos largos de contratación.</p>
+          </div>
+        </div>
+
+        <div class="feature-item reveal">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><rect x="3" y="4" width="18" height="16" rx="2"/></svg>
+          </div>
+          <div>
+            <h3 data-i18n="home.why.item3.title">Implementaciones reales</h3>
+            <p data-i18n="home.why.item3.description">Ejecutamos proyectos concretos: SIEM, Wazuh, Fortinet, migraciones y despliegues en producción.</p>
+          </div>
+        </div>
+
+        <div class="feature-item reveal">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/></svg>
+          </div>
+          <div>
+            <h3 data-i18n="home.why.item4.title">Compromiso con la seguridad</h3>
+            <p data-i18n="home.why.item4.description">Cada proyecto se ejecuta con criterios de seguridad y buenas prácticas desde el diseño.</p>
+          </div>
+        </div>
+
+        <div class="feature-item reveal">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12a8 8 0 0 1 14-5"/><path d="M20 12a8 8 0 0 1-14 5"/><path d="M18 3v4h-4M6 21v-4h4"/></svg>
+          </div>
+          <div>
+            <h3 data-i18n="home.why.item5.title">Flexibilidad operativa</h3>
+            <p data-i18n="home.why.item5.description">Nos adaptamos al alcance, los tiempos y las herramientas de cada cliente.</p>
+          </div>
+        </div>
+
+        <div class="feature-item reveal">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
+          </div>
+          <div>
+            <h3 data-i18n="home.why.item6.title">Profesionales especializados</h3>
+            <p data-i18n="home.why.item6.description">Cada proyecto se asigna a especialistas con experiencia específica en esa tecnología.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section>
+    <div class="container">
+      <div class="cta-band reveal">
+        <h2 data-i18n="home.cta.title">¿Necesitás reforzar tu equipo técnico?</h2>
+        <p data-i18n="home.cta.description">Contanos sobre tu proyecto y te respondemos con una propuesta concreta.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="contact.html" data-i18n="home.cta.primary">Contactanos</a>
+          <a class="btn btn-secondary" href="services.html" data-i18n="home.cta.secondary">Ver servicios</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="site-footer-mount"></div>
+
+<script src="assets/js/theme.js" defer></script>
+<script src="assets/js/translations.js" defer></script>
+<script src="assets/js/main.js" defer></script>
 </body>
 </html>

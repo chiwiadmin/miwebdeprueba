@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Servicios — Lulu & Pacho</title>
+<meta name="description" content="Infraestructura, ciberseguridad, network assessment, operaciones IT, consultoría y proyectos gestionados." />
+<link rel="icon" href="assets/img/logo.png" type="image/png" />
+<link rel="stylesheet" href="assets/css/variables.css" />
+<link rel="stylesheet" href="assets/css/styles.css" />
+<link rel="stylesheet" href="assets/css/responsive.css" />
+<script>
+  (function () {
+    try {
+      var stored = localStorage.getItem("lp-theme");
+      var theme = stored || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      document.documentElement.setAttribute("data-theme", theme);
+    } catch (err) {}
+  })();
+</script>
+</head>
+<body data-page="services">
+<a class="skip-link" href="#main-content">Saltar al contenido principal</a>
+<div id="site-header-mount"></div>
+
+<main id="main-content">
+  <header class="page-header">
+    <div class="container">
+      <span class="eyebrow" data-i18n="services.hero.eyebrow">Servicios</span>
+      <h1 data-i18n="services.hero.title">Capacidad técnica bajo demanda</h1>
+      <p data-i18n="services.hero.description">
+        Servicios profesionales de infraestructura y ciberseguridad para pequeñas y medianas empresas.
+      </p>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="card-grid">
+        <article class="card reveal">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="7" rx="1.5"/><rect x="3" y="14" width="18" height="7" rx="1.5"/><circle cx="7" cy="6.5" r="1"/><circle cx="7" cy="17.5" r="1"/><line x1="11" y1="6.5" x2="17" y2="6.5"/><line x1="11" y1="17.5" x2="17" y2="17.5"/></svg>
+          </div>
+          <h3 data-i18n="services.list.infrastructure.title">Infraestructura IT</h3>
+          <p data-i18n="services.list.infrastructure.description">Diseño, despliegue y soporte de infraestructura on-premise, híbrida y en la nube.</p>
+          <a class="card-link" href="#infrastructure" data-i18n="services.list.infrastructure.more">Más información</a>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg>
+          </div>
+          <h3 data-i18n="services.list.cybersecurity.title">Ciberseguridad</h3>
+          <p data-i18n="services.list.cybersecurity.description">Pentesting, auditorías de seguridad y hardening de sistemas críticos.</p>
+          <a class="card-link" href="#cybersecurity" data-i18n="services.list.cybersecurity.more">Más información</a>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="1.6"/><circle cx="5" cy="17" r="1.6"/><circle cx="19" cy="17" r="1.6"/><line x1="12" y1="6.6" x2="6" y2="15.4"/><line x1="12" y1="6.6" x2="18" y2="15.4"/><line x1="6.5" y1="17" x2="17.5" y2="17"/></svg>
+          </div>
+          <h3 data-i18n="services.list.networkAssessment.title">Network Assessment</h3>
+          <p data-i18n="services.list.networkAssessment.description">Relevamiento integral de redes para identificar riesgos y cuellos de botella.</p>
+          <a class="card-link" href="#network-assessment" data-i18n="services.list.networkAssessment.more">Más información</a>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4v10l-8 4-8-4V7z"/><path d="M12 3v18"/><path d="M4 7l8 4 8-4"/></svg>
+          </div>
+          <h3 data-i18n="services.list.itOperations.title">IT Operations</h3>
+          <p data-i18n="services.list.itOperations.description">Refuerzo operativo para picos de demanda y proyectos de gran escala.</p>
+          <a class="card-link" href="#it-operations" data-i18n="services.list.itOperations.more">Más información</a>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a6 6 0 0 0-3.6 10.8c.4.3.6.8.6 1.3V15h6v-.9c0-.5.2-1 .6-1.3A6 6 0 0 0 12 2z"/><line x1="10" y1="18" x2="14" y2="18"/><line x1="10.5" y1="21" x2="13.5" y2="21"/></svg>
+          </div>
+          <h3 data-i18n="services.list.consulting.title">Consultoría</h3>
+          <p data-i18n="services.list.consulting.description">Acompañamiento experto en decisiones de arquitectura, seguridad y proveedores.</p>
+          <a class="card-link" href="#consulting" data-i18n="services.list.consulting.more">Más información</a>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4" width="14" height="17" rx="2"/><rect x="9" y="2" width="6" height="4" rx="1"/><path d="M9 13l2 2 4-4"/></svg>
+          </div>
+          <h3 data-i18n="services.list.managedProjects.title">Proyectos Gestionados</h3>
+          <p data-i18n="services.list.managedProjects.description">Ejecución end-to-end de migraciones e implementaciones con seguimiento dedicado.</p>
+          <a class="card-link" href="#managed-projects" data-i18n="services.list.managedProjects.more">Más información</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="infrastructure" class="section-alt">
+    <div class="container prose reveal">
+      <h2 data-i18n="services.list.infrastructure.title">Infraestructura IT</h2>
+      <p data-i18n="services.list.infrastructure.description">Diseño, despliegue y soporte de infraestructura on-premise, híbrida y en la nube.</p>
+      <ul>
+        <li data-i18n="services.list.infrastructure.point1">Implementación y migración de servidores</li>
+        <li data-i18n="services.list.infrastructure.point2">Redes, virtualización y almacenamiento</li>
+        <li data-i18n="services.list.infrastructure.point3">Documentación técnica y planes de contingencia</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="cybersecurity">
+    <div class="container prose reveal">
+      <h2 data-i18n="services.list.cybersecurity.title">Ciberseguridad</h2>
+      <p data-i18n="services.list.cybersecurity.description">Pentesting, auditorías de seguridad y hardening de sistemas críticos.</p>
+      <ul>
+        <li data-i18n="services.list.cybersecurity.point1">Pentesting interno y externo</li>
+        <li data-i18n="services.list.cybersecurity.point2">Auditorías de seguridad y hardening</li>
+        <li data-i18n="services.list.cybersecurity.point3">Implementación de SIEM, Wazuh y Fortinet</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="network-assessment" class="section-alt">
+    <div class="container prose reveal">
+      <h2 data-i18n="services.list.networkAssessment.title">Network Assessment</h2>
+      <p data-i18n="services.list.networkAssessment.description">Relevamiento integral de redes para identificar riesgos y cuellos de botella.</p>
+      <ul>
+        <li data-i18n="services.list.networkAssessment.point1">Mapeo de topología y activos de red</li>
+        <li data-i18n="services.list.networkAssessment.point2">Análisis de tráfico y segmentación</li>
+        <li data-i18n="services.list.networkAssessment.point3">Informe priorizado de hallazgos</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="it-operations">
+    <div class="container prose reveal">
+      <h2 data-i18n="services.list.itOperations.title">IT Operations</h2>
+      <p data-i18n="services.list.itOperations.description">Refuerzo operativo para picos de demanda y proyectos de gran escala.</p>
+      <ul>
+        <li data-i18n="services.list.itOperations.point1">Refuerzo temporal de equipos técnicos</li>
+        <li data-i18n="services.list.itOperations.point2">Despliegues masivos de dispositivos</li>
+        <li data-i18n="services.list.itOperations.point3">Asistencia operativa on-site y remota</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="consulting" class="section-alt">
+    <div class="container prose reveal">
+      <h2 data-i18n="services.list.consulting.title">Consultoría</h2>
+      <p data-i18n="services.list.consulting.description">Acompañamiento experto en decisiones de arquitectura, seguridad y proveedores.</p>
+      <ul>
+        <li data-i18n="services.list.consulting.point1">Evaluación de arquitectura y proveedores</li>
+        <li data-i18n="services.list.consulting.point2">Definición de roadmap tecnológico</li>
+        <li data-i18n="services.list.consulting.point3">Segunda opinión técnica para proyectos críticos</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="managed-projects">
+    <div class="container prose reveal">
+      <h2 data-i18n="services.list.managedProjects.title">Proyectos Gestionados</h2>
+      <p data-i18n="services.list.managedProjects.description">Ejecución end-to-end de migraciones e implementaciones con seguimiento dedicado.</p>
+      <ul>
+        <li data-i18n="services.list.managedProjects.point1">Gestión de cronograma y entregables</li>
+        <li data-i18n="services.list.managedProjects.point2">Coordinación con proveedores y stakeholders</li>
+        <li data-i18n="services.list.managedProjects.point3">Cierre y transferencia de conocimiento</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="cta-band reveal">
+        <h2 data-i18n="services.cta.title">¿No estás seguro de qué servicio necesitás?</h2>
+        <p data-i18n="services.cta.description">Contanos el desafío que tenés y te ayudamos a encontrar el enfoque correcto.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="contact.html" data-i18n="services.cta.button">Hablemos</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="site-footer-mount"></div>
+
+<script src="assets/js/theme.js" defer></script>
+<script src="assets/js/translations.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

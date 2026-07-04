@@ -1,0 +1,116 @@
+/*
+  Mobile-first breakpoint overrides.
+  Base styles in styles.css target mobile; rules below progressively
+  enhance the layout for tablet and desktop viewports.
+*/
+
+/* ---------- Tablet (>= 640px) ---------- */
+@media (min-width: 640px) {
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .value-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-channels {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ---------- Desktop (>= 960px) ---------- */
+@media (min-width: 960px) {
+  :root {
+    --fs-4xl: 3.25rem;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .nav-panel {
+    position: static;
+    transform: none;
+    inset: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
+    padding: 0;
+    background: transparent;
+    gap: var(--space-6);
+    overflow: visible;
+  }
+
+  .nav-links {
+    flex-direction: row;
+    gap: var(--space-1);
+  }
+
+  .nav-links a {
+    padding: var(--space-2) var(--space-3);
+  }
+
+  .hero .container {
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+  }
+
+  .hero-content {
+    text-align: left;
+    flex: 1;
+  }
+
+  .hero-eyebrow,
+  .hero-actions {
+    justify-content: flex-start;
+  }
+
+  .hero-media {
+    flex: 1;
+    max-width: 560px;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .feature-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .value-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer-grid {
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+  }
+
+  .footer-bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  section {
+    padding-block: var(--space-16);
+  }
+}
+
+/* ---------- Large desktop (>= 1200px) ---------- */
+@media (min-width: 1200px) {
+  .card-grid.cols-6 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

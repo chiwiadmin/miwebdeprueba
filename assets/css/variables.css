@@ -1,0 +1,116 @@
+/*
+  Design tokens for Lulu & Pacho.
+  Light theme is the default; dark theme overrides via [data-theme="dark"].
+*/
+
+:root {
+  /* Brand blues */
+  --color-primary-900: #0b1a33;
+  --color-primary-700: #14335c;
+  --color-primary-600: #1d4ed8;
+  --color-primary-500: #2563eb;
+  --color-primary-400: #3b82f6;
+  --color-primary-100: #dbeafe;
+
+  /* Neutrals */
+  --color-white: #ffffff;
+  --color-gray-50: #f8fafc;
+  --color-gray-100: #f1f5f9;
+  --color-gray-200: #e2e8f0;
+  --color-gray-300: #cbd5e1;
+  --color-gray-500: #64748b;
+  --color-gray-600: #475569;
+  --color-gray-800: #1e293b;
+  --color-gray-900: #0f172a;
+
+  /* Status */
+  --color-success: #15803d;
+  --color-danger: #b91c1c;
+
+  /* Semantic tokens (light theme defaults) */
+  --bg: var(--color-white);
+  --bg-secondary: var(--color-gray-50);
+  --surface: var(--color-white);
+  --surface-hover: var(--color-gray-50);
+  --border: var(--color-gray-200);
+  --text: var(--color-gray-900);
+  --text-secondary: var(--color-gray-600);
+  --text-muted: var(--color-gray-500);
+  --text-on-primary: var(--color-white);
+
+  --primary: var(--color-primary-600);
+  --primary-hover: var(--color-primary-700);
+  --primary-soft: var(--color-primary-100);
+  --accent-glow: rgba(37, 99, 235, 0.14);
+
+  --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.06);
+  --shadow-md: 0 8px 24px rgba(15, 23, 42, 0.08);
+  --shadow-lg: 0 20px 48px rgba(15, 23, 42, 0.12);
+
+  --header-height: 4.5rem;
+
+  /* Typography */
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --fs-xs: 0.8125rem;
+  --fs-sm: 0.9375rem;
+  --fs-base: 1rem;
+  --fs-lg: 1.125rem;
+  --fs-xl: 1.375rem;
+  --fs-2xl: 1.75rem;
+  --fs-3xl: 2.25rem;
+  --fs-4xl: 2.75rem;
+  --lh-tight: 1.2;
+  --lh-normal: 1.6;
+
+  /* Spacing scale */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-8: 3rem;
+  --space-10: 4rem;
+  --space-12: 6rem;
+  --space-16: 8rem;
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-full: 999px;
+
+  --transition-fast: 150ms ease;
+  --transition-base: 220ms ease;
+  --transition-slow: 400ms ease;
+
+  --container-width: 1180px;
+}
+
+[data-theme="dark"] {
+  --bg: #0a1220;
+  --bg-secondary: #0d1830;
+  --surface: #111d33;
+  --surface-hover: #16223b;
+  --border: #223050;
+  --text: #f1f5f9;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+  --text-on-primary: #ffffff;
+
+  --primary: #4f8cf7;
+  --primary-hover: #6ea3f9;
+  --primary-soft: rgba(79, 140, 247, 0.16);
+  --accent-glow: rgba(79, 140, 247, 0.18);
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 24px 56px rgba(0, 0, 0, 0.45);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --transition-fast: 0ms;
+    --transition-base: 0ms;
+    --transition-slow: 0ms;
+  }
+}

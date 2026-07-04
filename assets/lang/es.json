@@ -1,0 +1,367 @@
+{
+  "meta": {
+    "home": {
+      "title": "Lulu & Pacho — Servicios de Infraestructura IT y Ciberseguridad",
+      "description": "Extendemos el equipo técnico de nuestros clientes en infraestructura IT, ciberseguridad e implementaciones."
+    },
+    "services": {
+      "title": "Servicios — Lulu & Pacho",
+      "description": "Infraestructura, ciberseguridad, network assessment, operaciones IT, consultoría y proyectos gestionados."
+    },
+    "about": {
+      "title": "Sobre Nosotros — Lulu & Pacho",
+      "description": "Misión, visión y valores del equipo de Lulu & Pacho."
+    },
+    "careers": {
+      "title": "Careers — Lulu & Pacho",
+      "description": "Sumate al equipo que refuerza la operación técnica de empresas de todos los tamaños."
+    },
+    "security": {
+      "title": "Seguridad — Lulu & Pacho",
+      "description": "Nuestro compromiso con la privacidad, la protección de datos y las buenas prácticas de seguridad."
+    },
+    "privacy": {
+      "title": "Política de Privacidad — Lulu & Pacho",
+      "description": "Cómo tratamos los datos de nuestros clientes y visitantes."
+    },
+    "contact": {
+      "title": "Contacto — Lulu & Pacho",
+      "description": "Contactanos para reforzar tu equipo técnico con especialistas en IT y ciberseguridad."
+    }
+  },
+
+  "nav": {
+    "home": "Home",
+    "services": "Servicios",
+    "why": "Por qué Lulu & Pacho",
+    "about": "Sobre Nosotros",
+    "careers": "Careers",
+    "security": "Seguridad",
+    "privacy": "Privacidad",
+    "contact": "Contacto",
+    "toggleLabel": "Abrir menú",
+    "themeLabel": "Cambiar entre modo claro y oscuro",
+    "brandLabel": "Lulu & Pacho, inicio"
+  },
+
+  "brand": {
+    "logoAlt": "Logo de Lulu & Pacho"
+  },
+
+  "home": {
+    "hero": {
+      "eyebrow": "Servicios profesionales de IT",
+      "title": "Extendemos tu equipo IT cuando más lo necesitás.",
+      "subtitle": "Infraestructura, Ciberseguridad, Implementaciones y Servicios Operativos para empresas.",
+      "ctaPrimary": "Contactanos",
+      "ctaSecondary": "Nuestros Servicios"
+    },
+    "services": {
+      "eyebrow": "Qué hacemos",
+      "title": "Capacidad técnica lista para sumarse a tu proyecto",
+      "description": "Trabajamos junto a equipos internos de IT para ejecutar, reforzar y acompañar proyectos tecnológicos de principio a fin.",
+      "card1": {
+        "title": "Infraestructura IT",
+        "description": "Diseño, despliegue y mantenimiento de infraestructura on-premise y en la nube.",
+        "link": "Más información"
+      },
+      "card2": {
+        "title": "Ciberseguridad",
+        "description": "Pentesting, auditorías y hardening para reducir la superficie de ataque de tu organización.",
+        "link": "Más información"
+      },
+      "card3": {
+        "title": "Network Assessment",
+        "description": "Relevamiento y diagnóstico de redes para detectar riesgos y oportunidades de mejora.",
+        "link": "Más información"
+      },
+      "card4": {
+        "title": "Operaciones IT",
+        "description": "Refuerzo temporal de equipos técnicos y despliegues masivos de dispositivos.",
+        "link": "Más información"
+      },
+      "card5": {
+        "title": "Consultoría",
+        "description": "Acompañamiento estratégico en decisiones de arquitectura, seguridad y proveedores.",
+        "link": "Más información"
+      },
+      "card6": {
+        "title": "Proyectos Gestionados",
+        "description": "Ejecución end-to-end de migraciones e implementaciones con responsables dedicados.",
+        "link": "Más información"
+      },
+      "viewAll": "Ver todos los servicios"
+    },
+    "why": {
+      "eyebrow": "Nuestro diferencial",
+      "title": "Por qué Lulu & Pacho",
+      "description": "No vendemos software: aportamos manos, criterio técnico y experiencia real en el terreno.",
+      "item1": {
+        "title": "Experiencia técnica comprobada",
+        "description": "Profesionales con recorrido real en infraestructura, redes y seguridad, no generalistas."
+      },
+      "item2": {
+        "title": "Escalamos equipos rápidamente",
+        "description": "Sumamos especialistas a tu equipo interno en tiempos acotados, sin procesos largos de contratación."
+      },
+      "item3": {
+        "title": "Implementaciones reales",
+        "description": "Ejecutamos proyectos concretos: SIEM, Wazuh, Fortinet, migraciones y despliegues en producción."
+      },
+      "item4": {
+        "title": "Compromiso con la seguridad",
+        "description": "Cada proyecto se ejecuta con criterios de seguridad y buenas prácticas desde el diseño."
+      },
+      "item5": {
+        "title": "Flexibilidad operativa",
+        "description": "Nos adaptamos al alcance, los tiempos y las herramientas de cada cliente."
+      },
+      "item6": {
+        "title": "Profesionales especializados",
+        "description": "Cada proyecto se asigna a especialistas con experiencia específica en esa tecnología."
+      }
+    },
+    "cta": {
+      "title": "¿Necesitás reforzar tu equipo técnico?",
+      "description": "Contanos sobre tu proyecto y te respondemos con una propuesta concreta.",
+      "primary": "Contactanos",
+      "secondary": "Ver servicios"
+    }
+  },
+
+  "services": {
+    "hero": {
+      "eyebrow": "Servicios",
+      "title": "Capacidad técnica bajo demanda",
+      "description": "Servicios profesionales de infraestructura y ciberseguridad para pequeñas y medianas empresas."
+    },
+    "list": {
+      "infrastructure": {
+        "title": "Infraestructura IT",
+        "description": "Diseño, despliegue y soporte de infraestructura on-premise, híbrida y en la nube.",
+        "more": "Más información",
+        "point1": "Implementación y migración de servidores",
+        "point2": "Redes, virtualización y almacenamiento",
+        "point3": "Documentación técnica y planes de contingencia"
+      },
+      "cybersecurity": {
+        "title": "Ciberseguridad",
+        "description": "Pentesting, auditorías de seguridad y hardening de sistemas críticos.",
+        "more": "Más información",
+        "point1": "Pentesting interno y externo",
+        "point2": "Auditorías de seguridad y hardening",
+        "point3": "Implementación de SIEM, Wazuh y Fortinet"
+      },
+      "networkAssessment": {
+        "title": "Network Assessment",
+        "description": "Relevamiento integral de redes para identificar riesgos y cuellos de botella.",
+        "more": "Más información",
+        "point1": "Mapeo de topología y activos de red",
+        "point2": "Análisis de tráfico y segmentación",
+        "point3": "Informe priorizado de hallazgos"
+      },
+      "itOperations": {
+        "title": "IT Operations",
+        "description": "Refuerzo operativo para picos de demanda y proyectos de gran escala.",
+        "more": "Más información",
+        "point1": "Refuerzo temporal de equipos técnicos",
+        "point2": "Despliegues masivos de dispositivos",
+        "point3": "Asistencia operativa on-site y remota"
+      },
+      "consulting": {
+        "title": "Consultoría",
+        "description": "Acompañamiento experto en decisiones de arquitectura, seguridad y proveedores.",
+        "more": "Más información",
+        "point1": "Evaluación de arquitectura y proveedores",
+        "point2": "Definición de roadmap tecnológico",
+        "point3": "Segunda opinión técnica para proyectos críticos"
+      },
+      "managedProjects": {
+        "title": "Proyectos Gestionados",
+        "description": "Ejecución end-to-end de migraciones e implementaciones con seguimiento dedicado.",
+        "more": "Más información",
+        "point1": "Gestión de cronograma y entregables",
+        "point2": "Coordinación con proveedores y stakeholders",
+        "point3": "Cierre y transferencia de conocimiento"
+      }
+    },
+    "cta": {
+      "title": "¿No estás seguro de qué servicio necesitás?",
+      "description": "Contanos el desafío que tenés y te ayudamos a encontrar el enfoque correcto.",
+      "button": "Hablemos"
+    }
+  },
+
+  "about": {
+    "hero": {
+      "eyebrow": "Sobre nosotros",
+      "title": "Un equipo técnico al servicio del tuyo",
+      "description": "Lulu & Pacho nació para acompañar a empresas que necesitan capacidad técnica confiable, sin las fricciones de una contratación tradicional."
+    },
+    "mission": {
+      "title": "Misión",
+      "text": "Extender el equipo técnico de nuestros clientes con especialistas confiables, aportando experiencia real en infraestructura y ciberseguridad exactamente cuando más se necesita."
+    },
+    "vision": {
+      "title": "Visión",
+      "text": "Ser el aliado técnico de referencia para pequeñas y medianas empresas que buscan ejecutar proyectos de IT y seguridad con calidad y sin fricciones."
+    },
+    "values": {
+      "eyebrow": "Nuestros principios",
+      "title": "Valores",
+      "description": "Los principios que guían cada proyecto que asumimos.",
+      "item1": {
+        "title": "Confianza",
+        "description": "Actuamos con transparencia y responsabilidad en cada entorno que tocamos."
+      },
+      "item2": {
+        "title": "Excelencia técnica",
+        "description": "Nos mantenemos actualizados y exigimos calidad en cada implementación."
+      },
+      "item3": {
+        "title": "Compromiso",
+        "description": "Nos involucramos con los tiempos y objetivos del cliente como si fueran propios."
+      },
+      "item4": {
+        "title": "Seguridad primero",
+        "description": "Cada decisión técnica considera el impacto en la seguridad del cliente."
+      },
+      "item5": {
+        "title": "Cercanía",
+        "description": "Comunicación clara y directa, sin tecnicismos innecesarios."
+      }
+    }
+  },
+
+  "careers": {
+    "hero": {
+      "eyebrow": "Careers",
+      "title": "Sumate a Lulu & Pacho",
+      "description": "Buscamos profesionales que disfruten resolver desafíos reales de infraestructura y ciberseguridad."
+    },
+    "intro": {
+      "title": "Cómo trabajamos",
+      "text": "Nuestro equipo participa en proyectos concretos junto a los equipos técnicos de nuestros clientes: implementaciones, migraciones, auditorías y despliegues. Valoramos la autonomía, el criterio técnico y la responsabilidad sobre los resultados."
+    },
+    "benefits": {
+      "title": "Qué ofrecemos",
+      "item1": {
+        "title": "Proyectos reales",
+        "description": "Trabajo sobre entornos productivos, no ejercicios de laboratorio."
+      },
+      "item2": {
+        "title": "Aprendizaje continuo",
+        "description": "Exposición a tecnologías y desafíos variados en cada cliente."
+      },
+      "item3": {
+        "title": "Flexibilidad",
+        "description": "Esquemas de colaboración adaptados a cada proyecto."
+      },
+      "item4": {
+        "title": "Equipo especializado",
+        "description": "Trabajás junto a profesionales senior en infraestructura y seguridad."
+      }
+    },
+    "openRoles": {
+      "title": "¿No hay una búsqueda abierta que encaje?",
+      "text": "Escribinos igual. Siempre estamos conociendo profesionales para futuros proyectos."
+    },
+    "cta": {
+      "title": "¿Querés formar parte del equipo?",
+      "description": "Contanos tu experiencia y en qué áreas te especializás.",
+      "button": "Escribinos"
+    }
+  },
+
+  "security": {
+    "hero": {
+      "eyebrow": "Seguridad",
+      "title": "Seguridad como base de todo lo que hacemos",
+      "description": "La confianza es la base de nuestro trabajo con infraestructura crítica y ciberseguridad."
+    },
+    "sections": {
+      "privacy": {
+        "title": "Privacidad",
+        "text": "Tratamos la información de nuestros clientes con estricta confidencialidad. Solo accedemos a los sistemas y datos necesarios para ejecutar el proyecto acordado, y bajo el alcance definido con cada cliente."
+      },
+      "dataProtection": {
+        "title": "Protección de datos",
+        "text": "Aplicamos controles técnicos y organizativos razonables para resguardar la información con la que trabajamos, incluyendo control de acceso, cifrado en tránsito cuando corresponde y minimización de datos."
+      },
+      "bestPractices": {
+        "title": "Buenas prácticas",
+        "text": "Seguimos lineamientos reconocidos de la industria en nuestras implementaciones y auditorías, adaptando cada recomendación al contexto real del cliente en lugar de aplicar checklists genéricas."
+      },
+      "responsibleDisclosure": {
+        "title": "Divulgación responsable",
+        "text": "Si detectás una vulnerabilidad relacionada con nuestros sistemas o sitio, te pedimos reportarla de forma responsable antes de hacerla pública, para poder evaluarla y resolverla.",
+        "email": "Podés escribirnos a"
+      }
+    }
+  },
+
+  "privacy": {
+    "hero": {
+      "eyebrow": "Privacidad",
+      "title": "Política de Privacidad",
+      "description": "Esta política describe cómo tratamos la información que compartís con nosotros."
+    },
+    "lastUpdated": "Última actualización: julio de 2026",
+    "sections": {
+      "intro": {
+        "title": "Introducción",
+        "text": "En Lulu & Pacho respetamos tu privacidad. Esta política explica qué información recopilamos a través de este sitio, cómo la usamos y qué opciones tenés al respecto."
+      },
+      "dataCollected": {
+        "title": "Información que recopilamos",
+        "text": "A través del formulario de contacto recopilamos únicamente la dirección de correo electrónico y el mensaje que decidís compartir. No utilizamos cookies de seguimiento ni recopilamos datos de navegación con fines publicitarios."
+      },
+      "dataUse": {
+        "title": "Uso de la información",
+        "text": "Usamos la información recibida exclusivamente para responder tu consulta y evaluar una posible colaboración. No utilizamos tus datos con fines comerciales distintos a este."
+      },
+      "dataSharing": {
+        "title": "Compartir información",
+        "text": "No vendemos ni compartimos tu información con terceros, salvo que sea estrictamente necesario para responder tu solicitud o que la ley lo requiera."
+      },
+      "rights": {
+        "title": "Tus derechos",
+        "text": "Podés solicitarnos en cualquier momento que eliminemos la información que nos hayas enviado a través de este sitio."
+      },
+      "contact": {
+        "title": "Contacto",
+        "text": "Si tenés preguntas sobre esta política, podés escribirnos desde nuestra página de Contacto."
+      }
+    }
+  },
+
+  "contact": {
+    "hero": {
+      "eyebrow": "Contacto",
+      "title": "Hablemos de tu proyecto",
+      "description": "Contanos brevemente qué necesitás y te respondemos a la brevedad."
+    },
+    "form": {
+      "emailLabel": "Correo electrónico",
+      "emailPlaceholder": "tu@empresa.com",
+      "messageLabel": "Mensaje",
+      "messagePlaceholder": "Contanos brevemente qué necesitás",
+      "submit": "Enviar mensaje",
+      "sending": "Enviando...",
+      "successMessage": "¡Gracias! Tu mensaje fue enviado, te responderemos a la brevedad.",
+      "errorMessage": "No pudimos enviar tu mensaje. Por favor, intentá nuevamente en unos minutos.",
+      "errorRequired": "Completá el correo y el mensaje antes de enviar."
+    },
+    "note": {
+      "text": "Tu mensaje se envía de forma segura a nuestro equipo de contacto. No compartimos tu información con terceros."
+    }
+  },
+
+  "footer": {
+    "description": "Extendemos el equipo técnico de nuestros clientes en infraestructura IT y ciberseguridad.",
+    "linksTitle": "Enlaces rápidos",
+    "legalTitle": "Legal",
+    "contactTitle": "Contacto",
+    "rights": "Todos los derechos reservados."
+  }
+}

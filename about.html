@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sobre Nosotros — Lulu & Pacho</title>
+<meta name="description" content="Misión, visión y valores del equipo de Lulu & Pacho." />
+<link rel="icon" href="assets/img/logo.png" type="image/png" />
+<link rel="stylesheet" href="assets/css/variables.css" />
+<link rel="stylesheet" href="assets/css/styles.css" />
+<link rel="stylesheet" href="assets/css/responsive.css" />
+<script>
+  (function () {
+    try {
+      var stored = localStorage.getItem("lp-theme");
+      var theme = stored || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      document.documentElement.setAttribute("data-theme", theme);
+    } catch (err) {}
+  })();
+</script>
+</head>
+<body data-page="about">
+<a class="skip-link" href="#main-content">Saltar al contenido principal</a>
+<div id="site-header-mount"></div>
+
+<main id="main-content">
+  <header class="page-header">
+    <div class="container">
+      <span class="eyebrow" data-i18n="about.hero.eyebrow">Sobre nosotros</span>
+      <h1 data-i18n="about.hero.title">Un equipo técnico al servicio del tuyo</h1>
+      <p data-i18n="about.hero.description">
+        Lulu & Pacho nació para acompañar a empresas que necesitan capacidad técnica confiable, sin las fricciones
+        de una contratación tradicional.
+      </p>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="value-grid">
+        <div class="value-card reveal">
+          <h2 data-i18n="about.mission.title">Misión</h2>
+          <p data-i18n="about.mission.text">
+            Extender el equipo técnico de nuestros clientes con especialistas confiables, aportando experiencia real
+            en infraestructura y ciberseguridad exactamente cuando más se necesita.
+          </p>
+        </div>
+        <div class="value-card reveal">
+          <h2 data-i18n="about.vision.title">Visión</h2>
+          <p data-i18n="about.vision.text">
+            Ser el aliado técnico de referencia para pequeñas y medianas empresas que buscan ejecutar proyectos de IT
+            y seguridad con calidad y sin fricciones.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-alt">
+    <div class="container">
+      <div class="section-heading center">
+        <span class="eyebrow" data-i18n="about.values.eyebrow">Nuestros principios</span>
+        <h2 data-i18n="about.values.title">Valores</h2>
+        <p data-i18n="about.values.description">Los principios que guían cada proyecto que asumimos.</p>
+      </div>
+
+      <div class="feature-grid">
+        <div class="feature-item reveal">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/></svg>
+          </div>
+          <div>
+            <h3 data-i18n="about.values.item1.title">Confianza</h3>
+            <p data-i18n="about.values.item1.description">Actuamos con transparencia y responsabilidad en cada entorno que tocamos.</p>
+          </div>
+        </div>
+
+        <div class="feature-item reveal">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3 6 6 1-4.5 4 1 6-5.5-3-5.5 3 1-6L4 9l6-1z"/></svg>
+          </div>
+          <div>
+            <h3 data-i18n="about.values.item2.title">Excelencia técnica</h3>
+            <p data-i18n="about.values.item2.description">Nos mantenemos actualizados y exigimos calidad en cada implementación.</p>
+          </div>
+        </div>
+
+        <div class="feature-item reveal">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
+          </div>
+          <div>
+            <h3 data-i18n="about.values.item3.title">Compromiso</h3>
+            <p data-i18n="about.values.item3.description">Nos involucramos con los tiempos y objetivos del cliente como si fueran propios.</p>
+          </div>
+        </div>
+
+        <div class="feature-item reveal">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg>
+          </div>
+          <div>
+            <h3 data-i18n="about.values.item4.title">Seguridad primero</h3>
+            <p data-i18n="about.values.item4.description">Cada decisión técnica considera el impacto en la seguridad del cliente.</p>
+          </div>
+        </div>
+
+        <div class="feature-item reveal">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-8.5 8.5 8.5 8.5 0 1 1 6-14.5"/><path d="M21 4l-9 9-3-3"/></svg>
+          </div>
+          <div>
+            <h3 data-i18n="about.values.item5.title">Cercanía</h3>
+            <p data-i18n="about.values.item5.description">Comunicación clara y directa, sin tecnicismos innecesarios.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="cta-band reveal">
+        <h2 data-i18n="home.cta.title">¿Necesitás reforzar tu equipo técnico?</h2>
+        <p data-i18n="home.cta.description">Contanos sobre tu proyecto y te respondemos con una propuesta concreta.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="contact.html" data-i18n="home.cta.primary">Contactanos</a>
+          <a class="btn btn-secondary" href="services.html" data-i18n="home.cta.secondary">Ver servicios</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="site-footer-mount"></div>
+
+<script src="assets/js/theme.js" defer></script>
+<script src="assets/js/translations.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

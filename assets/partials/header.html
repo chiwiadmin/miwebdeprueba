@@ -1,0 +1,57 @@
+<header class="site-header">
+  <div class="container navbar">
+    <a class="brand" href="index.html">
+      <img src="assets/img/logo.png" alt="Lulu & Pacho" data-i18n-attr="alt:brand.logoAlt" width="40" height="40" />
+      <span>Lulu &amp; Pacho</span>
+    </a>
+
+    <button
+      id="nav-toggle"
+      class="nav-toggle"
+      type="button"
+      aria-expanded="false"
+      aria-controls="nav-panel"
+      aria-label="Abrir menú"
+      data-i18n-attr="aria-label:nav.toggleLabel"
+    >
+      <span></span>
+    </button>
+
+    <nav id="nav-panel" class="nav-panel" aria-label="Principal">
+      <ul class="nav-links">
+        <li><a href="index.html" data-page-link="home" data-i18n="nav.home">Home</a></li>
+        <li><a href="services.html" data-page-link="services" data-i18n="nav.services">Services</a></li>
+        <li><a href="index.html#why" data-i18n="nav.why">Why Lulu &amp; Pacho</a></li>
+        <li><a href="about.html" data-page-link="about" data-i18n="nav.about">About Us</a></li>
+        <li><a href="careers.html" data-page-link="careers" data-i18n="nav.careers">Careers</a></li>
+        <li><a href="security.html" data-page-link="security" data-i18n="nav.security">Security</a></li>
+        <li><a href="privacy.html" data-page-link="privacy" data-i18n="nav.privacy">Privacy</a></li>
+        <li><a href="contact.html" data-page-link="contact" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-controls">
+        <div class="lang-switch" role="group" aria-label="Selector de idioma">
+          <button type="button" data-lang-option="es" aria-pressed="true">ES</button>
+          <button type="button" data-lang-option="en" aria-pressed="false">EN</button>
+        </div>
+
+        <button
+          id="theme-toggle"
+          class="theme-toggle"
+          type="button"
+          aria-pressed="false"
+          aria-label="Cambiar a modo oscuro"
+          data-i18n-attr="aria-label:nav.themeLabel"
+        >
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="12" cy="12" r="4" />
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5Z" />
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>

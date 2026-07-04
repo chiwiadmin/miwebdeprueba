@@ -1,0 +1,367 @@
+{
+  "meta": {
+    "home": {
+      "title": "Lulu & Pacho — IT Infrastructure and Cybersecurity Services",
+      "description": "We extend our clients' technical teams in IT infrastructure, cybersecurity, and implementations."
+    },
+    "services": {
+      "title": "Services — Lulu & Pacho",
+      "description": "Infrastructure, cybersecurity, network assessment, IT operations, consulting, and managed projects."
+    },
+    "about": {
+      "title": "About Us — Lulu & Pacho",
+      "description": "The mission, vision, and values behind the Lulu & Pacho team."
+    },
+    "careers": {
+      "title": "Careers — Lulu & Pacho",
+      "description": "Join the team that reinforces technical operations for companies of every size."
+    },
+    "security": {
+      "title": "Security — Lulu & Pacho",
+      "description": "Our commitment to privacy, data protection, and security best practices."
+    },
+    "privacy": {
+      "title": "Privacy Policy — Lulu & Pacho",
+      "description": "How we handle the data of our clients and visitors."
+    },
+    "contact": {
+      "title": "Contact — Lulu & Pacho",
+      "description": "Get in touch to reinforce your technical team with IT and cybersecurity specialists."
+    }
+  },
+
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "why": "Why Lulu & Pacho",
+    "about": "About Us",
+    "careers": "Careers",
+    "security": "Security",
+    "privacy": "Privacy",
+    "contact": "Contact",
+    "toggleLabel": "Open menu",
+    "themeLabel": "Toggle light and dark mode",
+    "brandLabel": "Lulu & Pacho, home"
+  },
+
+  "brand": {
+    "logoAlt": "Lulu & Pacho logo"
+  },
+
+  "home": {
+    "hero": {
+      "eyebrow": "Professional IT services",
+      "title": "We extend your IT team exactly when you need it most.",
+      "subtitle": "Infrastructure, Cybersecurity, Implementations, and Operational Services for businesses.",
+      "ctaPrimary": "Contact Us",
+      "ctaSecondary": "Our Services"
+    },
+    "services": {
+      "eyebrow": "What we do",
+      "title": "Technical capacity ready to join your project",
+      "description": "We work alongside internal IT teams to execute, reinforce, and support technology projects from start to finish.",
+      "card1": {
+        "title": "IT Infrastructure",
+        "description": "Design, deployment, and maintenance of on-premise and cloud infrastructure.",
+        "link": "Learn more"
+      },
+      "card2": {
+        "title": "Cybersecurity",
+        "description": "Pentesting, audits, and hardening to reduce your organization's attack surface.",
+        "link": "Learn more"
+      },
+      "card3": {
+        "title": "Network Assessment",
+        "description": "Network surveys and diagnostics to identify risks and improvement opportunities.",
+        "link": "Learn more"
+      },
+      "card4": {
+        "title": "IT Operations",
+        "description": "Temporary reinforcement for technical teams and mass device rollouts.",
+        "link": "Learn more"
+      },
+      "card5": {
+        "title": "Consulting",
+        "description": "Strategic guidance on architecture, security, and vendor decisions.",
+        "link": "Learn more"
+      },
+      "card6": {
+        "title": "Managed Projects",
+        "description": "End-to-end execution of migrations and implementations with dedicated owners.",
+        "link": "Learn more"
+      },
+      "viewAll": "View all services"
+    },
+    "why": {
+      "eyebrow": "Our difference",
+      "title": "Why Lulu & Pacho",
+      "description": "We don't sell software: we bring hands-on work, technical judgment, and real field experience.",
+      "item1": {
+        "title": "Proven technical experience",
+        "description": "Professionals with a real track record in infrastructure, networking, and security, not generalists."
+      },
+      "item2": {
+        "title": "We scale teams quickly",
+        "description": "We add specialists to your internal team in short timeframes, without lengthy hiring processes."
+      },
+      "item3": {
+        "title": "Real implementations",
+        "description": "We execute concrete projects: SIEM, Wazuh, Fortinet, migrations, and production rollouts."
+      },
+      "item4": {
+        "title": "Commitment to security",
+        "description": "Every project is executed with security criteria and best practices built in from the start."
+      },
+      "item5": {
+        "title": "Operational flexibility",
+        "description": "We adapt to each client's scope, timelines, and tooling."
+      },
+      "item6": {
+        "title": "Specialized professionals",
+        "description": "Every project is assigned to specialists with hands-on experience in that specific technology."
+      }
+    },
+    "cta": {
+      "title": "Need to reinforce your technical team?",
+      "description": "Tell us about your project and we'll get back to you with a concrete proposal.",
+      "primary": "Contact Us",
+      "secondary": "View Services"
+    }
+  },
+
+  "services": {
+    "hero": {
+      "eyebrow": "Services",
+      "title": "Technical capacity, on demand",
+      "description": "Professional infrastructure and cybersecurity services for small and medium businesses."
+    },
+    "list": {
+      "infrastructure": {
+        "title": "IT Infrastructure",
+        "description": "Design, deployment, and support for on-premise, hybrid, and cloud infrastructure.",
+        "more": "Learn more",
+        "point1": "Server implementation and migration",
+        "point2": "Networking, virtualization, and storage",
+        "point3": "Technical documentation and contingency plans"
+      },
+      "cybersecurity": {
+        "title": "Cybersecurity",
+        "description": "Pentesting, security audits, and hardening for critical systems.",
+        "more": "Learn more",
+        "point1": "Internal and external pentesting",
+        "point2": "Security audits and hardening",
+        "point3": "SIEM, Wazuh, and Fortinet implementation"
+      },
+      "networkAssessment": {
+        "title": "Network Assessment",
+        "description": "Comprehensive network review to identify risks and bottlenecks.",
+        "more": "Learn more",
+        "point1": "Network topology and asset mapping",
+        "point2": "Traffic analysis and segmentation",
+        "point3": "Prioritized findings report"
+      },
+      "itOperations": {
+        "title": "IT Operations",
+        "description": "Operational reinforcement for demand spikes and large-scale projects.",
+        "more": "Learn more",
+        "point1": "Temporary reinforcement of technical teams",
+        "point2": "Mass device rollouts",
+        "point3": "On-site and remote operational support"
+      },
+      "consulting": {
+        "title": "Consulting",
+        "description": "Expert guidance on architecture, security, and vendor decisions.",
+        "more": "Learn more",
+        "point1": "Architecture and vendor evaluation",
+        "point2": "Technology roadmap definition",
+        "point3": "Technical second opinion for critical projects"
+      },
+      "managedProjects": {
+        "title": "Managed Projects",
+        "description": "End-to-end execution of migrations and implementations with dedicated follow-up.",
+        "more": "Learn more",
+        "point1": "Schedule and deliverable management",
+        "point2": "Coordination with vendors and stakeholders",
+        "point3": "Closeout and knowledge transfer"
+      }
+    },
+    "cta": {
+      "title": "Not sure which service you need?",
+      "description": "Tell us about your challenge and we'll help you find the right approach.",
+      "button": "Let's talk"
+    }
+  },
+
+  "about": {
+    "hero": {
+      "eyebrow": "About Us",
+      "title": "A technical team at the service of yours",
+      "description": "Lulu & Pacho was created to support companies that need reliable technical capacity, without the friction of traditional hiring."
+    },
+    "mission": {
+      "title": "Mission",
+      "text": "To extend our clients' technical teams with reliable specialists, bringing real infrastructure and cybersecurity experience exactly when it's needed most."
+    },
+    "vision": {
+      "title": "Vision",
+      "text": "To be the go-to technical partner for small and medium businesses looking to execute IT and security projects with quality and without friction."
+    },
+    "values": {
+      "eyebrow": "Our principles",
+      "title": "Values",
+      "description": "The principles that guide every project we take on.",
+      "item1": {
+        "title": "Trust",
+        "description": "We act with transparency and responsibility in every environment we touch."
+      },
+      "item2": {
+        "title": "Technical excellence",
+        "description": "We stay up to date and demand quality in every implementation."
+      },
+      "item3": {
+        "title": "Commitment",
+        "description": "We engage with our clients' timelines and goals as if they were our own."
+      },
+      "item4": {
+        "title": "Security first",
+        "description": "Every technical decision considers the impact on our client's security."
+      },
+      "item5": {
+        "title": "Closeness",
+        "description": "Clear, direct communication, without unnecessary jargon."
+      }
+    }
+  },
+
+  "careers": {
+    "hero": {
+      "eyebrow": "Careers",
+      "title": "Join Lulu & Pacho",
+      "description": "We're looking for professionals who enjoy solving real infrastructure and cybersecurity challenges."
+    },
+    "intro": {
+      "title": "How we work",
+      "text": "Our team takes part in concrete projects alongside our clients' technical teams: implementations, migrations, audits, and rollouts. We value autonomy, technical judgment, and ownership of results."
+    },
+    "benefits": {
+      "title": "What we offer",
+      "item1": {
+        "title": "Real projects",
+        "description": "Work on production environments, not lab exercises."
+      },
+      "item2": {
+        "title": "Continuous learning",
+        "description": "Exposure to varied technologies and challenges with every client."
+      },
+      "item3": {
+        "title": "Flexibility",
+        "description": "Collaboration models adapted to each project."
+      },
+      "item4": {
+        "title": "Specialized team",
+        "description": "Work alongside senior professionals in infrastructure and security."
+      }
+    },
+    "openRoles": {
+      "title": "No open role that fits right now?",
+      "text": "Write to us anyway. We're always getting to know professionals for future projects."
+    },
+    "cta": {
+      "title": "Want to be part of the team?",
+      "description": "Tell us about your experience and the areas you specialize in.",
+      "button": "Write to Us"
+    }
+  },
+
+  "security": {
+    "hero": {
+      "eyebrow": "Security",
+      "title": "Security as the foundation of everything we do",
+      "description": "Trust is the foundation of our work with critical infrastructure and cybersecurity."
+    },
+    "sections": {
+      "privacy": {
+        "title": "Privacy",
+        "text": "We handle our clients' information with strict confidentiality. We only access the systems and data necessary to execute the agreed project, and within the scope defined with each client."
+      },
+      "dataProtection": {
+        "title": "Data protection",
+        "text": "We apply reasonable technical and organizational controls to safeguard the information we work with, including access control, encryption in transit where applicable, and data minimization."
+      },
+      "bestPractices": {
+        "title": "Best practices",
+        "text": "We follow recognized industry guidelines in our implementations and audits, adapting each recommendation to the client's real context instead of applying generic checklists."
+      },
+      "responsibleDisclosure": {
+        "title": "Responsible disclosure",
+        "text": "If you find a vulnerability related to our systems or site, please report it responsibly before disclosing it publicly, so we can assess and resolve it.",
+        "email": "You can reach us at"
+      }
+    }
+  },
+
+  "privacy": {
+    "hero": {
+      "eyebrow": "Privacy",
+      "title": "Privacy Policy",
+      "description": "This policy describes how we handle the information you share with us."
+    },
+    "lastUpdated": "Last updated: July 2026",
+    "sections": {
+      "intro": {
+        "title": "Introduction",
+        "text": "At Lulu & Pacho we respect your privacy. This policy explains what information we collect through this site, how we use it, and what choices you have."
+      },
+      "dataCollected": {
+        "title": "Information we collect",
+        "text": "Through the contact form we only collect the email address and message you choose to share. We do not use tracking cookies or collect browsing data for advertising purposes."
+      },
+      "dataUse": {
+        "title": "How we use information",
+        "text": "We use the information received solely to respond to your inquiry and evaluate a potential collaboration. We do not use your data for any other commercial purpose."
+      },
+      "dataSharing": {
+        "title": "Sharing information",
+        "text": "We do not sell or share your information with third parties, except when strictly necessary to respond to your request or required by law."
+      },
+      "rights": {
+        "title": "Your rights",
+        "text": "You can ask us at any time to delete the information you have submitted through this site."
+      },
+      "contact": {
+        "title": "Contact",
+        "text": "If you have questions about this policy, you can reach us through our Contact page."
+      }
+    }
+  },
+
+  "contact": {
+    "hero": {
+      "eyebrow": "Contact",
+      "title": "Let's talk about your project",
+      "description": "Tell us briefly what you need and we'll get back to you shortly."
+    },
+    "form": {
+      "emailLabel": "Email address",
+      "emailPlaceholder": "you@company.com",
+      "messageLabel": "Message",
+      "messagePlaceholder": "Tell us briefly what you need",
+      "submit": "Send message",
+      "sending": "Sending...",
+      "successMessage": "Thanks! Your message was sent, we'll get back to you shortly.",
+      "errorMessage": "We couldn't send your message. Please try again in a few minutes.",
+      "errorRequired": "Please fill in the email and message before sending."
+    },
+    "note": {
+      "text": "Your message is sent securely to our contact team. We do not share your information with third parties."
+    }
+  },
+
+  "footer": {
+    "description": "We extend our clients' technical teams in IT infrastructure and cybersecurity.",
+    "linksTitle": "Quick Links",
+    "legalTitle": "Legal",
+    "contactTitle": "Contact",
+    "rights": "All rights reserved."
+  }
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Seguridad — Lulu & Pacho</title>
+<meta name="description" content="Nuestro compromiso con la privacidad, la protección de datos y las buenas prácticas de seguridad." />
+<link rel="icon" href="assets/img/logo.png" type="image/png" />
+<link rel="stylesheet" href="assets/css/variables.css" />
+<link rel="stylesheet" href="assets/css/styles.css" />
+<link rel="stylesheet" href="assets/css/responsive.css" />
+<script>
+  (function () {
+    try {
+      var stored = localStorage.getItem("lp-theme");
+      var theme = stored || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      document.documentElement.setAttribute("data-theme", theme);
+    } catch (err) {}
+  })();
+</script>
+</head>
+<body data-page="security">
+<a class="skip-link" href="#main-content">Saltar al contenido principal</a>
+<div id="site-header-mount"></div>
+
+<main id="main-content">
+  <header class="page-header">
+    <div class="container">
+      <span class="eyebrow" data-i18n="security.hero.eyebrow">Seguridad</span>
+      <h1 data-i18n="security.hero.title">Seguridad como base de todo lo que hacemos</h1>
+      <p data-i18n="security.hero.description">
+        La confianza es la base de nuestro trabajo con infraestructura crítica y ciberseguridad.
+      </p>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="feature-grid">
+        <div class="feature-item reveal">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/></svg>
+          </div>
+          <div>
+            <h3 data-i18n="security.sections.privacy.title">Privacidad</h3>
+            <p data-i18n="security.sections.privacy.text">
+              Tratamos la información de nuestros clientes con estricta confidencialidad. Solo accedemos a los
+              sistemas y datos necesarios para ejecutar el proyecto acordado, y bajo el alcance definido con cada
+              cliente.
+            </p>
+          </div>
+        </div>
+
+        <div class="feature-item reveal">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="10" width="14" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+          </div>
+          <div>
+            <h3 data-i18n="security.sections.dataProtection.title">Protección de datos</h3>
+            <p data-i18n="security.sections.dataProtection.text">
+              Aplicamos controles técnicos y organizativos razonables para resguardar la información con la que
+              trabajamos, incluyendo control de acceso, cifrado en tránsito cuando corresponde y minimización de
+              datos.
+            </p>
+          </div>
+        </div>
+
+        <div class="feature-item reveal">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><rect x="3" y="4" width="18" height="16" rx="2"/></svg>
+          </div>
+          <div>
+            <h3 data-i18n="security.sections.bestPractices.title">Buenas prácticas</h3>
+            <p data-i18n="security.sections.bestPractices.text">
+              Seguimos lineamientos reconocidos de la industria en nuestras implementaciones y auditorías, adaptando
+              cada recomendación al contexto real del cliente en lugar de aplicar checklists genéricas.
+            </p>
+          </div>
+        </div>
+
+        <div class="feature-item reveal">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg>
+          </div>
+          <div>
+            <h3 data-i18n="security.sections.responsibleDisclosure.title">Divulgación responsable</h3>
+            <p data-i18n="security.sections.responsibleDisclosure.text">
+              Si detectás una vulnerabilidad relacionada con nuestros sistemas o sitio, te pedimos reportarla de
+              forma responsable antes de hacerla pública, para poder evaluarla y resolverla.
+            </p>
+            <p>
+              <span data-i18n="security.sections.responsibleDisclosure.email">Podés escribirnos a</span>
+              <a href="mailto:contacto@lulupacho.org">contacto@lulupacho.org</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="site-footer-mount"></div>
+
+<script src="assets/js/theme.js" defer></script>
+<script src="assets/js/translations.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
