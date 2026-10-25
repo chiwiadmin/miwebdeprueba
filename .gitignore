@@ -1,0 +1,6 @@
+node_modules/
+.wrangler/
+.dev.vars
+# Real song answers: the repo is public, so they must never be committed.
+private/
+db/seed.sql

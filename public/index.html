@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Lulu &amp; Pacho — Rock nacional argentino</title>
+<meta name="description" content="Juego diario de rock nacional argentino: adiviná la canción y el artista con la menor cantidad de frases." />
+<link rel="stylesheet" href="assets/css/variables.css" />
+<link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+<a class="skip-link" href="#main">Saltar al contenido</a>
+
+<header class="topbar">
+  <h1 class="logo">Lulu <span>&amp;</span> Pacho</h1>
+  <p class="genre">Rock nacional argentino</p>
+  <svg class="flag" role="img" aria-label="Bandera de Argentina" viewBox="0 0 36 24" width="36" height="24">
+    <rect width="36" height="24" fill="#74acdf" />
+    <rect y="8" width="36" height="8" fill="#ffffff" />
+    <circle cx="18" cy="12" r="2.6" fill="#f6b40e" />
+  </svg>
+</header>
+
+<main id="main" class="container">
+
+  <!-- Pantalla 1: nickname -->
+  <section id="screen-welcome" class="card" aria-labelledby="welcome-title">
+    <h2 id="welcome-title">¿Cómo te llamás?</h2>
+    <p class="muted">Cada día hay una canción del rock nacional argentino para adivinar. Elegí un nickname para aparecer en el ranking semanal.</p>
+    <form id="nick-form" novalidate>
+      <label for="nick">Nickname</label>
+      <input id="nick" name="nick" type="text" maxlength="16" autocomplete="off" required />
+      <p id="nick-error" class="error" role="alert" hidden></p>
+      <button class="btn" type="submit">Jugar</button>
+    </form>
+  </section>
+
+  <!-- Pantalla 2: juego -->
+  <section id="screen-game" class="card" aria-labelledby="game-title" hidden>
+    <h2 id="game-title">Hola, <span id="player-name"></span></h2>
+    <p class="muted" id="game-progress"></p>
+
+    <ol id="clues" class="clues" aria-live="polite"></ol>
+
+    <form id="guess-form" novalidate>
+      <div id="title-wrap">
+        <label for="guess-title">Canción</label>
+        <input id="guess-title" type="text" autocomplete="off" />
+      </div>
+      <p id="title-ok" class="ok" hidden>✔ Canción acertada</p>
+
+      <div id="artist-wrap">
+        <label for="guess-artist">Artista</label>
+        <input id="guess-artist" type="text" autocomplete="off" />
+      </div>
+      <p id="artist-ok" class="ok" hidden>✔ Artista acertado</p>
+
+      <p id="feedback" class="feedback" role="status" hidden></p>
+
+      <div class="actions">
+        <button class="btn" type="submit">Arriesgar</button>
+        <button class="btn btn-ghost" type="button" id="skip-btn">Pedir otra frase</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- Pantalla 3: resultado -->
+  <section id="screen-result" class="card" aria-labelledby="result-title" hidden>
+    <h2 id="result-title"></h2>
+    <p class="score"><span id="result-score">0</span> <small>puntos</small></p>
+    <p id="result-detail" class="muted"></p>
+    <p class="muted">Volvé mañana por una nueva canción.</p>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>Etapa 2 · versión de prueba</p>
+</footer>
+
+<script type="module" src="assets/js/app.js"></script>
+</body>
+</html>

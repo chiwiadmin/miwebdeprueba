@@ -1,0 +1,8 @@
+name = "lulupacho-juego"
+compatibility_date = "2025-01-01"
+pages_build_output_dir = "public"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "lulupacho-db"
+database_id = "1e3bcf5e-68b8-417d-b9d9-2668e6900018"

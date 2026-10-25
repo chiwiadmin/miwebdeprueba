@@ -1,0 +1,32 @@
+/* Design tokens: carbon base with neon accents (contrast verified WCAG AA/AAA). */
+:root {
+  color-scheme: dark;
+
+  --bg: #0e0f12;
+  --surface: #16181d;
+  --surface-2: #1d2027;
+  --border: #2a2e37;
+  --text: #e8eaed;
+  --text-muted: #9aa0a6;
+
+  --accent-1: #00e5ff;
+  --accent-2: #1dffc2;
+  --danger: #ff4d6d;
+  --text-on-accent: #0e0f12;
+
+  --glow-1: 0 0 0 3px rgba(0, 229, 255, 0.25), 0 0 24px rgba(0, 229, 255, 0.25);
+  --glow-2: 0 0 24px rgba(29, 255, 194, 0.25);
+
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --radius: 14px;
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2.5rem;
+  --container: 640px;
+  --transition: 180ms ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root { --transition: 0ms; }
+}
