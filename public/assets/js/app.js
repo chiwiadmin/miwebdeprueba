@@ -25,7 +25,6 @@ const GENERIC_ERROR = "Algo salió mal. Probá de nuevo en unos segundos.";
 
 let current = null;
 let busy = false;
-let songOptions = [];
 let artistOptions = [];
 
 async function api(path, body) {
@@ -187,15 +186,11 @@ $("guess-form").addEventListener("submit", async (event) => {
 $("skip-btn").addEventListener("click", () => send("/api/skip", {}, "feedback"));
 
 async function init() {
-  attachAutocomplete($("guess-title"), () => songOptions);
+  // Only the artist field gets suggestions; guessing the song is meant to be unaided.
   attachAutocomplete($("guess-artist"), () => artistOptions);
 
-  const [artistsRes, catalogRes] = await Promise.all([
-    fetch("assets/data/artists.json").catch(() => null),
-    fetch("assets/data/songs-catalog.json").catch(() => null)
-  ]);
+  const artistsRes = await fetch("assets/data/artists.json").catch(() => null);
   if (artistsRes && artistsRes.ok) artistOptions = suggestionOptions(await artistsRes.json());
-  if (catalogRes && catalogRes.ok) songOptions = (await catalogRes.json()).map((value) => ({ value }));
 
   const response = await api("/api/state");
   if (!response.ok && !response.data.joined) {
