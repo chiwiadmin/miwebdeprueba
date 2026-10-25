@@ -185,3 +185,18 @@ test("API de punta a punta: al terminar una partida real aparecés en el ranking
   assert.deepEqual(data.me, { position: 1, nickname: "Lucas", points: 10, days: 1 });
   assert.equal(data.top[0].you, true);
 });
+
+test("semana de una sola canción (la del domingo 25/10): con igual puntaje queda primero quien terminó antes", async () => {
+  const { sqlite, env } = setup();
+  const sunday = "2026-10-25";
+  addPlayer(sqlite, "Segundo", [{ date: sunday, score: 5, attempt: 2, at: "2026-10-25T18:40:00Z" }]);
+  addPlayer(sqlite, "Primero", [{ date: sunday, score: 5, attempt: 2, at: "2026-10-25T15:05:00Z" }]);
+  addPlayer(sqlite, "Tercero", [{ date: sunday, score: 5, attempt: 2, at: "2026-10-25T23:10:00Z" }]);
+  addPlayer(sqlite, "Campeon", [{ date: sunday, score: 10, attempt: 1, at: "2026-10-25T22:00:00Z" }]);
+  addPlayer(sqlite, "SinPuntos", [{ date: sunday, score: 0, attempt: 3, at: "2026-10-25T14:00:00Z" }]);
+  const { top } = await getRanking(env, W43, null);
+  assert.deepEqual(
+    top.map((r) => [r.position, r.nickname, r.points]),
+    [[1, "Campeon", 10], [2, "Primero", 5], [3, "Segundo", 5], [4, "Tercero", 5], [5, "SinPuntos", 0]]
+  );
+});
