@@ -87,12 +87,54 @@ function renderGame() {
   (game.titleOk ? $("guess-artist") : $("guess-title")).focus();
 }
 
+const MEDALS = ["🥇", "🥈", "🥉"];
+
+function formatDay(isoDate) {
+  const [, month, day] = isoDate.split("-");
+  return `${Number(day)}/${Number(month)}`;
+}
+
+async function renderRanking() {
+  const box = $("ranking");
+  const response = await api("/api/ranking");
+  const data = response.data;
+  if (!response.ok || !Array.isArray(data.top) || !data.top.length) { box.hidden = true; return; }
+
+  $("ranking-note").textContent = `Semana hasta el domingo ${formatDay(data.weekEnds)} · ${data.players} ${data.players === 1 ? "jugador" : "jugadores"}`;
+
+  const list = $("ranking-list");
+  list.replaceChildren();
+  data.top.forEach((row) => {
+    const li = document.createElement("li");
+    if (row.you) li.className = "is-you";
+    const position = document.createElement("span");
+    position.className = "pos";
+    position.textContent = MEDALS[row.position - 1] || `${row.position}°`;
+    const name = document.createElement("span");
+    name.className = "name";
+    name.textContent = row.you ? `${row.nickname} (vos)` : row.nickname;
+    const points = document.createElement("span");
+    points.className = "pts";
+    points.textContent = `${row.points} pts`;
+    li.append(position, name, points);
+    list.append(li);
+  });
+
+  const mine = $("ranking-me");
+  const outside = data.me && !data.top.some((row) => row.you);
+  mine.hidden = !outside;
+  if (outside) mine.textContent = `Tu posición: ${data.me.position}° de ${data.players} · ${data.me.points} pts`;
+  box.hidden = false;
+}
+
 function renderResult() {
   const { game, answer } = current;
   $("result-title").textContent = game.won ? `¡Acertaste, ${current.nickname}!` : "Esta vez no fue";
   $("result-score").textContent = game.score;
   $("result-detail").textContent = `La canción era “${answer.title}” de ${answer.artist}.`;
+  $("ranking").hidden = true;
   show("result");
+  renderRanking();
 }
 
 function apply(state) {

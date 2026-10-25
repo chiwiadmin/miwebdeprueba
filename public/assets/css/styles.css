@@ -128,3 +128,14 @@ input:focus { outline: none; border-color: var(--accent-1); box-shadow: var(--gl
 .ac-list li:hover, .ac-list li[aria-selected="true"] { background: var(--accent-1); color: var(--text-on-accent); }
 
 .note { font-size: 0.875rem; border-left: 3px solid var(--accent-2); padding-left: var(--space-2); }
+
+/* Weekly ranking */
+.ranking-box { margin: var(--space-3) 0; padding: var(--space-2); background: var(--surface-2); border: 1px solid var(--border); border-radius: var(--radius); }
+.ranking-box h3 { margin: 0 0 0.25rem; }
+.ranking { list-style: none; margin: var(--space-2) 0 0; padding: 0; display: grid; gap: 0.35rem; }
+.ranking li { display: grid; grid-template-columns: 2.5rem 1fr auto; align-items: center; gap: var(--space-1); padding: 0.5rem 0.75rem; border-radius: 10px; background: var(--surface); }
+.ranking .pos { font-weight: 700; text-align: center; }
+.ranking .name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.ranking .pts { font-weight: 700; color: var(--accent-2); }
+.ranking li.is-you { border: 1px solid var(--accent-1); box-shadow: var(--glow-1); }
+.ranking-me { margin: var(--space-2) 0 0; font-weight: 700; color: var(--accent-1); }

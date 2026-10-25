@@ -6,6 +6,7 @@
   POST /api/join    {nickname}  creates the player and the session cookie
   POST /api/guess   {title, artist}
   POST /api/skip    asks for another clue (consumes an attempt)
+  GET  /api/ranking weekly top 5, plus your own position when signed in
 
   The song of the day never leaves the server until the player's game is finished.
 */
@@ -13,7 +14,8 @@
 import { submitGuess, skipClue, normalize } from "../public/assets/js/game-core.js";
 import { acceptedNames } from "../public/assets/js/artists.js";
 import { validateNickname } from "../public/assets/js/nickname.js";
-import { argentinaDate, isoWeekKey } from "./dates.js";
+import { argentinaDate, isoWeekKey, addDays } from "./dates.js";
+import { getRanking } from "./ranking.js";
 import { getSongForDate } from "./schedule.js";
 import { COOKIE_NAME, createToken, verifyToken, readCookie, sessionCookie } from "./session.js";
 
@@ -45,6 +47,7 @@ export async function handle(request, env, now = new Date(), artists = []) {
   const url = new URL(request.url);
   try {
     if (request.method === "GET" && url.pathname === "/api/state") return await getState(request, env, now);
+    if (request.method === "GET" && url.pathname === "/api/ranking") return await ranking(request, env, now);
 
     if (request.method === "POST" && ["/api/join", "/api/guess", "/api/skip"].includes(url.pathname)) {
       const rejected = checkPost(request, url);
@@ -144,6 +147,15 @@ async function getState(request, env, now) {
   const player = await getPlayer(request, env);
   if (!player) return json({ joined: false, date: argentinaDate(now) });
   return stateFor(player, env, now);
+}
+
+/** Public: anyone can see the top of the week. `me` is filled in only for a signed-in player. */
+async function ranking(request, env, now) {
+  const player = await getPlayer(request, env);
+  const date = argentinaDate(now);
+  const dayOfWeek = (new Date(`${date}T00:00:00Z`).getUTCDay() + 6) % 7; // Monday = 0
+  const data = await getRanking(env, isoWeekKey(date), player ? player.id : null);
+  return json({ ...data, weekEnds: addDays(date, 6 - dayOfWeek) });
 }
 
 async function join(request, env, now, url) {
