@@ -87,8 +87,6 @@ function renderGame() {
   (game.titleOk ? $("guess-artist") : $("guess-title")).focus();
 }
 
-const MEDALS = ["🥇", "🥈", "🥉"];
-
 function formatDay(isoDate) {
   const [, month, day] = isoDate.split("-");
   return `${Number(day)}/${Number(month)}`;
@@ -108,8 +106,9 @@ async function renderRanking() {
     const li = document.createElement("li");
     if (row.you) li.className = "is-you";
     const position = document.createElement("span");
-    position.className = "pos";
-    position.textContent = MEDALS[row.position - 1] || `${row.position}°`;
+    position.className = row.position <= 3 ? `pos rank-${row.position}` : "pos";
+    position.textContent = String(row.position);
+    position.setAttribute("aria-label", `Puesto ${row.position}`);
     const name = document.createElement("span");
     name.className = "name";
     name.textContent = row.you ? `${row.nickname} (vos)` : row.nickname;
