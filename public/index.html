@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Lulu &amp; Pacho — Rock nacional argentino</title>
 <meta name="description" content="Juego diario de rock nacional argentino: adiviná la canción y el artista con la menor cantidad de frases." />
+<link rel="icon" href="favicon.svg" type="image/svg+xml" />
 <link rel="preload" href="assets/fonts/montserrat-latin.woff2" as="font" type="font/woff2" crossorigin />
 <link rel="stylesheet" href="assets/css/variables.css" />
 <link rel="stylesheet" href="assets/css/styles.css" />
@@ -14,12 +15,14 @@
 
 <header class="topbar">
   <h1 class="logo">Lulu <span>&amp;</span> Pacho</h1>
-  <p class="genre">Rock nacional argentino</p>
-  <svg class="flag" role="img" aria-label="Bandera de Argentina" viewBox="0 0 36 24" width="36" height="24">
-    <rect width="36" height="24" fill="#74acdf" />
-    <rect y="8" width="36" height="8" fill="#ffffff" />
-    <circle cx="18" cy="12" r="2.6" fill="#f6b40e" />
-  </svg>
+  <p class="genre">
+    <svg class="flag" role="img" aria-label="Bandera de Argentina" viewBox="0 0 36 24" width="22" height="15">
+      <rect width="36" height="24" fill="#74acdf" />
+      <rect y="8" width="36" height="8" fill="#ffffff" />
+      <circle cx="18" cy="12" r="2.6" fill="#f6b40e" />
+    </svg>
+    <span>Rock nacional argentino</span>
+  </p>
 </header>
 
 <main id="main" class="container">
@@ -27,8 +30,16 @@
   <!-- Pantalla 1: nickname -->
   <section id="screen-welcome" class="card" aria-labelledby="welcome-title">
     <h2 id="welcome-title">¿Cómo te llamás?</h2>
-    <p class="muted">Cada día hay una canción del rock nacional argentino para adivinar. Elegí un nickname para aparecer en el ranking semanal.</p>
-    <p class="muted note">Tu nickname queda asociado a este navegador y dispositivo: no necesitás recordarlo para seguir jugando desde acá. Si borrás los datos del navegador o jugás desde otro equipo, vas a tener que elegir otro nickname (el anterior queda reservado).</p>
+    <div class="rules">
+      <p>Cada día, una canción nueva: adiviná la <strong>canción y el artista</strong> con hasta 3 frases. Elegí un nickname para competir en el ranking semanal.</p>
+      <ul class="points" aria-label="Puntos por frase">
+        <li><strong>10</strong><span>con la 1.ª frase</span></li>
+        <li><strong>5</strong><span>con la 2.ª</span></li>
+        <li><strong>3</strong><span>con la 3.ª</span></li>
+        <li><strong>0</strong><span>si no acertás</span></li>
+      </ul>
+    </div>
+    <p class="muted note">Tu nickname se guarda en este navegador. Si jugás desde otro equipo o borrás los datos, vas a tener que elegir uno nuevo.</p>
     <form id="nick-form" novalidate>
       <label for="nick">Nickname</label>
       <input id="nick" name="nick" type="text" maxlength="16" autocomplete="off" required />

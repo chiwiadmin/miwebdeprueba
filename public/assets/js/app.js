@@ -1,4 +1,4 @@
-import { MAX_CLUES } from "./game-core.js";
+import { MAX_CLUES, SCORE_BY_ATTEMPT } from "./game-core.js";
 import { validateNickname } from "./nickname.js";
 import { suggestionOptions } from "./artists.js";
 import { attachAutocomplete } from "./autocomplete.js";
@@ -74,7 +74,7 @@ function renderClues() {
 function renderGame() {
   const game = current.game;
   $("player-name").textContent = current.nickname;
-  $("game-progress").textContent = `Intento ${game.attempt} de ${MAX_CLUES}`;
+  $("game-progress").textContent = `Intento ${game.attempt} de ${MAX_CLUES} · si acertás ahora, sumás ${SCORE_BY_ATTEMPT[game.attempt - 1]} puntos`;
   $("title-wrap").hidden = game.titleOk;
   $("title-ok").hidden = !game.titleOk;
   $("artist-wrap").hidden = game.artistOk;
