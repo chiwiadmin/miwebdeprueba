@@ -126,3 +126,5 @@ input:focus { outline: none; border-color: var(--accent-1); box-shadow: var(--gl
 }
 .ac-list li { padding: 0.6rem 0.75rem; border-radius: 8px; cursor: pointer; }
 .ac-list li:hover, .ac-list li[aria-selected="true"] { background: var(--accent-1); color: var(--text-on-accent); }
+
+.note { font-size: 0.875rem; border-left: 3px solid var(--accent-2); padding-left: var(--space-2); }
