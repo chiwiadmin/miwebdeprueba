@@ -1,7 +1,11 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { handle } from "../server/api.js";
+import { readFileSync } from "node:fs";
+import { handle as handleRequest } from "../server/api.js";
 import { createTestDb } from "./helpers/d1.mjs";
+
+const artistList = JSON.parse(readFileSync(new URL("../public/assets/data/artists.json", import.meta.url), "utf8"));
+const handle = (request, env, now) => handleRequest(request, env, now, artistList);
 
 const ORIGIN = "https://juego.test";
 const DAY1 = new Date("2026-10-25T15:00:00Z"); // Queso Ruso

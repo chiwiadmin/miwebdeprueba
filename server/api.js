@@ -13,7 +13,6 @@
 import { submitGuess, skipClue, normalize } from "../public/assets/js/game-core.js";
 import { acceptedNames } from "../public/assets/js/artists.js";
 import { validateNickname } from "../public/assets/js/nickname.js";
-import artists from "../public/assets/data/artists.json" with { type: "json" };
 import { argentinaDate, isoWeekKey } from "./dates.js";
 import { getSongForDate } from "./schedule.js";
 import { COOKIE_NAME, createToken, verifyToken, readCookie, sessionCookie } from "./session.js";
@@ -35,7 +34,12 @@ function json(data, status = 200, headers = {}) {
 
 const fail = (error, status) => json({ error }, status);
 
-export async function handle(request, env, now = new Date()) {
+/**
+ * `artists` is the dictionary from assets/data/artists.json. It is passed in (not imported here)
+ * because Cloudflare's Pages build uses an older esbuild that rejects `import ... with { type: "json" }`,
+ * which plain Node requires.
+ */
+export async function handle(request, env, now = new Date(), artists = []) {
   if (!env.SESSION_SECRET || !env.DB) return fail("server_misconfigured", 500);
 
   const url = new URL(request.url);
@@ -46,7 +50,7 @@ export async function handle(request, env, now = new Date()) {
       const rejected = checkPost(request, url);
       if (rejected) return rejected;
       if (url.pathname === "/api/join") return await join(request, env, now, url);
-      return await move(request, env, now, url.pathname === "/api/guess" ? "guess" : "skip");
+      return await move(request, env, now, url.pathname === "/api/guess" ? "guess" : "skip", artists);
     }
     return fail("not_found", 404);
   } catch (err) {
@@ -173,7 +177,7 @@ function cleanField(value) {
   return typeof value === "string" ? value.trim() : "";
 }
 
-async function move(request, env, now, kind) {
+async function move(request, env, now, kind, artists) {
   const player = await getPlayer(request, env);
   if (!player) return fail("not_joined", 401);
 
